@@ -7,7 +7,9 @@ function App() {
         <div className="container">
           <img src='' alt='selected' className='selected' />
           <div className="imgContainer">
-            <img src="" alt="dog" />
+            {
+              images.map((image,index) => <img key={index} src={image} alt='dog'/>)
+            }
           </div>
         </div>
     </div>
